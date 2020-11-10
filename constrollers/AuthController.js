@@ -10,7 +10,16 @@ const AuthController = {
 
     showHome: (req,res) => {
         res.render('index');
+    },
+    
+    create: (req, res) => {
+        res.render('post');
+    },
+
+    store: (req, res) => {
+        res.json(req.body);
     }
+
 
 
 }
